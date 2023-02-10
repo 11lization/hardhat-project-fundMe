@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0.0; // 0.8.12
+pragma solidity ^0.8.0 .0; // 0.8.12
 
 contract SimpleStorage {
     // uint defualt : 256
     // bytes : byte[]
-    
     // default initialized to zero.
     // default internal
     // default storage variable
@@ -26,7 +25,7 @@ contract SimpleStorage {
 
     // view, pure disallow any modification. And pure only use the function parameter.
     // Cost only applies when called by a contract.
-    function retrieve() public view returns(uint256) {
+    function retrieve() public view returns (uint256) {
         return favoriteNumber;
     }
 
@@ -36,5 +35,4 @@ contract SimpleStorage {
         people.push(People(_favoriteNumber, _name));
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
-
 }
